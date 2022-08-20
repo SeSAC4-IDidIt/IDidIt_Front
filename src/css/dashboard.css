@@ -1,0 +1,98 @@
+/* css 초기화 */
+body {
+  background-color: #FFFFFF;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+}
+
+/* 네비게이션 */
+.logo-container {margin: 20px 0 70px 20px;}
+
+.nav-container {
+  display: inline-block;
+  /* width: 25%; */
+  height: 100%;
+  font-size: 20px;
+}
+
+.nav-container ul {
+
+}
+
+.nav-container ul li {}
+
+.nav-container ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 20px;
+}
+
+.nav-container ul li a:hover {
+  background: black;
+  color: white;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+.dashboard-container {
+  background: #F8FAFB;
+  padding: 25px 40px;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  column-gap: 30px;
+}
+
+/* dashboard left */
+.dashboard-subgrid-container-left {
+  margin-top: 75px;
+  display: grid;
+  grid-template-rows: 200px 500px;
+  row-gap: 30px;
+}
+.dashboard-subgrid-container-left div {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.dashboard-calendar {
+
+}
+
+.dashboard-memo {
+
+}
+
+/* dashboard right */
+.dashboard-subgrid-container-right {
+  display: grid;
+  grid-template-rows: 70px 1fr 1.5fr;
+  row-gap: 36px;
+}
+.dashboard-subgrid-container-right div:not(:first-of-type) {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.dashboard-member-button {
+  float: right;
+}
+.dashboard-button:hover {
+  background: black;
+  color: white;
+}
+.dashboard-member-button ul {
+  list-style: none;
+}
+.dashboard-member-button ul li {float: left;}
+
+.dashboard-button {height: 40px;border: none;margin: 5px;background: #fff;border-radius: 10px;}
+.dashboard-button i {
+  margin-right: 8px;
+}
